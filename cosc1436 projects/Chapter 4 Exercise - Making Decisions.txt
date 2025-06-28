@@ -1,0 +1,80 @@
+//Dollar Game Program
+//Zara Dogar
+//9-28-22
+
+
+Output code:
+
+Let's play a change-counting game.
+
+Enter the number of coins needed to make exactly one dollar.
+
+Enter the number of pennies: 2
+Enter the number of nickles: 3
+Enter the number of dimes: 5
+Enter the number of quarters: 1
+
+Sorry, that's less than one dollar.
+
+//C++ Source Code: 
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //Constants
+    const double PENNY = 0.01;
+    const double NICKLE = 0.05;
+    const double DIME = 0.10;
+    const double QUARTER = 0.25;
+    const double DOLLAR = 1.00;
+
+    //Variables for user input
+    int numPennies; //To hold the number of pennies
+    int numNickles; //To hold the number of nickles
+    int numDimes; //To hold the number of dimes
+    int numQuarters; //To hold the number of quarters
+
+    //Variables for calculation
+    double total; //To hold the total
+
+    //Display the objective of the game
+    cout << "Let's play a change-counting game.\n\n"
+         << "Enter the number of coins needed to make "
+         << "exactly one dollar.\n\n";
+
+    //Get the number of penies
+    cout << "Enter the number of pennies: ";
+    cin >> numPennies;
+
+    //Get the number of nickles
+    cout << "Enter the number of nickles: ";
+    cin >> numNickles;
+
+    //Get the number of dimes
+    cout << "Enter the number of dimes: ";
+    cin >> numDimes;
+
+    //Get the number of quarters
+    cout << "Enter the number of quarters: ";
+    cin >> numQuarters;
+    
+    //Calculate the total
+    total = numPennies * PENNY +
+            numNickles * NICKLE +
+            numDimes * DIME +
+            numQuarters * QUARTER;
+
+    //Determine the results
+    if (total > DOLLAR)
+        cout << "\nSorry, that's more than one dollar.\n";
+        else if (total < DOLLAR)
+        cout << "\nSorry, that's less than one dollar.\n";
+        else 
+        cout << "\nCongratulations! You win!\n";
+
+        system ("pause");
+        
+        return 0;
+}

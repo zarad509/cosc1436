@@ -1,0 +1,16 @@
+//Inches To Feet Program
+//Zara Dogar
+//9-14-22
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int inches = 36;
+    int feet = inches/12;
+    cout << "inches = " << feet << " feet" << endl;
+    system ("pause");
+
+    return 0;
+}

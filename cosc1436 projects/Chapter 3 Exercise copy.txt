@@ -1,0 +1,37 @@
+//Chapter 3 Exercise - Expressions & Interactivity
+//Zara Dogar
+//9-21-22
+
+Console Output Results:
+
+How many gallons of gas can the car hold?
+
+
+
+//C++ Source Code: 
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  double gallons; //To hold the gas tank capacity (in gallons)
+  double miles; //To hold the miles the car can go on 1 tank of gas
+  double mileage; //To hold the calculated miles per gallon
+
+  //Get the gas tank capacity
+  cout << "How many gallons of gas can the car hold?";
+  cin >> gallons;
+
+  //Get the miles the car can travel on full tank
+  cout << "How many miles can you drive on a full tank? ";
+  cin >> miles;
+
+  //Calculate the miles per gallon
+  mileage = miles/gallons;
+
+  //Display the result
+  cout << "This car gets " << mileage << " miles per gallon.\n";
+  system("pause");
+  return 0;
+}

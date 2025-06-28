@@ -1,0 +1,50 @@
+//Kilometers To Miles Program
+//Zara Dogar
+//9-14-22
+
+
+Output code:
+Enter the direction you'd like to move:
+North
+
+Enter the number of steps
+130
+
+Distance in miles 0.065
+Distance in kilometer 0.0104585
+Direction of Distance North
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+
+{
+    //variables
+    char direction, steps;
+    const int stepsPerMile = 2000;
+    
+    //store results in miles
+    double distanceMile;
+    double distanceKilometer;
+    
+    //Display the direction
+     cout << "Enter the direction you'd like to move: \n\n";
+     cin >> direction;
+     
+     //Display the number of steps
+     cout << "Enter the number of steps: \n\n";
+     cin >> steps;
+     
+     //Equation
+     distanceMile = (double) (steps) / (stepsPerMile);
+     distanceKilometer = (double)(distanceMile * 1.609);
+     
+     //Display the distance in miles
+     cout << "Distance in miles: \n\n";
+     cout << "Distance in kilometer: \n\n";
+     cout << "Direction of Distance: \n\n";
+     
+     return 0;
+}
